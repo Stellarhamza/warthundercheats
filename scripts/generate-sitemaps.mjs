@@ -475,44 +475,31 @@ function main() {
   validate(games, forums, allPaths, sitemap)
 
   writeFileSync(join(publicDir, 'sitemap.xml'), sitemap, 'utf8')
+
+  // Plain-text sitemap (one URL per line) — Google accepts this and it often
+  // succeeds when XML fetch is flaky on new .xyz / Cloudflare setups.
+  const sitemapTxt = allPaths.map((path) => siteUrl(path)).join('\n') + '\n'
+  writeFileSync(join(publicDir, 'sitemap.txt'), sitemapTxt, 'utf8')
+
   writeFileSync(
     join(publicDir, 'robots.txt'),
     [
-      'User-agent: Googlebot',
-      'Allow: /',
-      'Allow: /sitemap.xml',
-      'Allow: /robots.txt',
-      'Allow: /media/',
-      'Allow: /og/',
-      'Allow: /videos/',
-      '',
-      'User-agent: Google-InspectionTool',
-      'Allow: /',
-      'Allow: /sitemap.xml',
-      'Allow: /robots.txt',
-      'Allow: /media/',
-      'Allow: /og/',
-      'Allow: /videos/',
-      '',
-      'User-agent: Bingbot',
-      'Allow: /',
-      'Allow: /sitemap.xml',
-      'Allow: /robots.txt',
-      'Allow: /media/',
-      'Allow: /og/',
-      'Allow: /videos/',
-      '',
       'User-agent: *',
       'Allow: /',
-      'Allow: /sitemap.xml',
-      'Allow: /robots.txt',
-      'Allow: /media/',
-      'Allow: /og/',
-      'Allow: /videos/',
       'Disallow: /404',
       'Disallow: /404.html',
       '',
+      'User-agent: Googlebot',
+      'Allow: /',
+      '',
+      'User-agent: Google-InspectionTool',
+      'Allow: /',
+      '',
+      'User-agent: Bingbot',
+      'Allow: /',
+      '',
       `Sitemap: ${siteUrl('/sitemap.xml')}`,
+      `Sitemap: ${siteUrl('/sitemap.txt')}`,
       '',
     ].join('\n'),
     'utf8',
@@ -535,7 +522,7 @@ function main() {
   }
 
   console.log(
-    `Sitemap OK: ${allPaths.length} pages in single sitemap.xml (${siteUrl('/sitemap.xml')})`,
+    `Sitemap OK: ${allPaths.length} pages in sitemap.xml + sitemap.txt (${siteUrl('/sitemap.xml')})`,
   )
 }
 

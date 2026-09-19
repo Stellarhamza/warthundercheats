@@ -22,10 +22,13 @@ directory = "./dist"
 binding = "ASSETS"
 not_found_handling = "404-page"
 html_handling = "drop-trailing-slash"
-# Sitemap + robots run through the Worker (application/xml + www→apex).
-# Static media still bypasses the Worker for speed.
+# Sitemap/robots are static assets (dayzcheats-proven path for Googlebot).
+# Worker still handles everything else first (www→apex, HTML charset).
 run_worker_first = [
   "/*",
+  "!/sitemap.xml",
+  "!/sitemap.txt",
+  "!/robots.txt",
   "!/sitemap.css",
   "!/favicon.svg",
   "!/_astro/*",

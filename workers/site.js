@@ -6,11 +6,13 @@
  * Canonical host is apex (no www). Always 301 www → apex so crawlers never
  * see duplicate content or mismatched canonical/hreflang on www.
  *
- * /sitemap.xml and /robots.txt always run through this Worker (not asset-only)
- * so Google gets stable application/xml + apex redirects (fixes GSC "Couldn't fetch").
+ * /sitemap.xml and /robots.txt are served as static assets (see wrangler
+ * run_worker_first exclusions) so Google gets the same text/xml path that
+ * works on sibling sites — Worker reconstruction can 5xx some crawler IPs.
  */
-function assetsFetch(env, request, pathname) {
-  return env.ASSETS.fetch(new Request(new URL(pathname, 'https://assets.local'), request))
+function assetsFetch(env, pathname) {
+  // Never forward client Accept-Encoding / cookies — those can 5xx ASSETS for bots.
+  return env.ASSETS.fetch(new Request(new URL(pathname, 'https://assets.local'), { method: 'GET' }))
 }
 
 function withHtmlCharset(response) {
@@ -48,56 +50,6 @@ function toApexUrl(url) {
   return next
 }
 
-function wantsBrowserSitemapView(request) {
-  const accept = (request.headers.get('accept') || '').toLowerCase()
-  const ua = (request.headers.get('user-agent') || '').toLowerCase()
-  if (/googlebot|bingbot|yandex|duckduck|slurp|baiduspider|facebookexternalhit|twitterbot|linkedinbot|semrush|ahrefs|mj12bot|dotbot/.test(ua)) {
-    return false
-  }
-  return accept.includes('text/html')
-}
-
-async function serveSitemap(env, request) {
-  const assetResponse = await assetsFetch(env, request, '/sitemap.xml')
-  if (!assetResponse.ok) {
-    return new Response('Sitemap unavailable', {
-      status: assetResponse.status,
-      headers: { 'content-type': 'text/plain; charset=utf-8' },
-    })
-  }
-
-  let body = await assetResponse.text()
-  if (wantsBrowserSitemapView(request) && !body.includes('xml-stylesheet')) {
-    body = body.replace(
-      '<?xml version="1.0" encoding="UTF-8"?>',
-      '<?xml version="1.0" encoding="UTF-8"?>\n<?xml-stylesheet type="text/css" href="/sitemap.css"?>',
-    )
-  }
-
-  const headers = new Headers()
-  headers.set('content-type', 'application/xml; charset=utf-8')
-  headers.set('cache-control', 'public, max-age=300')
-  headers.set('x-content-type-options', 'nosniff')
-  headers.set('access-control-allow-origin', '*')
-  headers.set('x-robots-tag', 'noindex, follow')
-  return new Response(body, { status: 200, headers })
-}
-
-async function serveRobots(env, request) {
-  const assetResponse = await assetsFetch(env, request, '/robots.txt')
-  if (!assetResponse.ok) {
-    return new Response('User-agent: *\nAllow: /\n', {
-      status: 200,
-      headers: { 'content-type': 'text/plain; charset=utf-8' },
-    })
-  }
-  const headers = new Headers()
-  headers.set('content-type', 'text/plain; charset=utf-8')
-  headers.set('cache-control', 'public, max-age=300')
-  headers.set('x-content-type-options', 'nosniff')
-  return new Response(assetResponse.body, { status: 200, headers })
-}
-
 export default {
   async fetch(request, env) {
     const url = new URL(request.url)
@@ -113,17 +65,34 @@ export default {
       return Response.redirect(apex.toString(), 301)
     }
 
-    if (url.pathname === '/sitemap.xml') {
-      return serveSitemap(env, request)
-    }
-    if (url.pathname === '/robots.txt') {
-      return serveRobots(env, request)
+    // Explicit apex redirects for crawl files if Worker is ever invoked for them
+    if (
+      url.pathname === '/sitemap.xml' ||
+      url.pathname === '/sitemap.txt' ||
+      url.pathname === '/robots.txt'
+    ) {
+      const assetResponse = await assetsFetch(env, url.pathname)
+      const headers = new Headers(assetResponse.headers)
+      if (url.pathname === '/sitemap.xml') {
+        headers.set('content-type', 'text/xml; charset=utf-8')
+      } else if (url.pathname === '/sitemap.txt') {
+        headers.set('content-type', 'text/plain; charset=utf-8')
+      } else {
+        headers.set('content-type', 'text/plain; charset=utf-8')
+      }
+      headers.set('cache-control', 'public, max-age=3600')
+      headers.set('x-content-type-options', 'nosniff')
+      headers.delete('x-robots-tag')
+      return new Response(assetResponse.body, {
+        status: assetResponse.status,
+        statusText: assetResponse.statusText,
+        headers,
+      })
     }
 
-    const assetResponse = await assetsFetch(env, request, url.pathname + url.search)
+    const assetResponse = await assetsFetch(env, url.pathname + url.search)
     const response = withHtmlCharset(assetResponse)
 
-    // Help crawlers + Seobility: advertise preferred host + self-canonical
     const headers = new Headers(response.headers)
     if (!headers.has('Strict-Transport-Security')) {
       headers.set('Strict-Transport-Security', 'max-age=31536000; includeSubDomains; preload')

@@ -282,6 +282,7 @@ for (const stale of [
 }
 
 if (!existsSync(join(dist, 'sitemap.xml'))) fail('dist/sitemap.xml is missing')
+if (!existsSync(join(dist, 'sitemap.txt'))) fail('dist/sitemap.txt is missing')
 if (!existsSync(join(dist, 'robots.txt'))) fail('dist/robots.txt is missing')
 if (!existsSync(join(dist, '_routes.json'))) fail('dist/_routes.json is missing')
 
@@ -289,19 +290,28 @@ const robots = readFileSync(join(dist, 'robots.txt'), 'utf8')
 if (!robots.includes('Sitemap: https://warthundercheats.xyz/sitemap.xml')) {
   fail('robots.txt must point at the canonical HTTPS sitemap')
 }
-if (!robots.includes('Allow: /sitemap.xml')) {
-  fail('robots.txt must explicitly allow /sitemap.xml')
+if (!robots.includes('Sitemap: https://warthundercheats.xyz/sitemap.txt')) {
+  fail('robots.txt must also advertise sitemap.txt for Google fetch fallback')
 }
-if (!robots.includes('Allow: /videos/')) {
-  fail('robots.txt must allow /videos/ for preview crawlability')
+if (!robots.includes('Allow: /')) {
+  fail('robots.txt must allow crawling')
 }
 if (!robots.includes('User-agent: Googlebot')) {
   fail('robots.txt must explicitly allow Googlebot')
 }
 
+const sitemapTxt = readFileSync(join(dist, 'sitemap.txt'), 'utf8').trim().split(/\r?\n/)
+if (sitemapTxt.length < 10) fail('sitemap.txt must list page URLs')
+if (!sitemapTxt.includes('https://warthundercheats.xyz/')) {
+  fail('sitemap.txt missing homepage URL')
+}
+
 const routes = JSON.parse(readFileSync(join(dist, '_routes.json'), 'utf8'))
 if (!routes.exclude?.includes('/sitemap.xml') || !routes.exclude?.includes('/robots.txt')) {
   fail('_routes.json must exclude /sitemap.xml and /robots.txt from Functions')
+}
+if (!routes.exclude?.includes('/sitemap.txt')) {
+  fail('_routes.json must exclude /sitemap.txt from Functions')
 }
 
 for (const asset of [
@@ -368,20 +378,24 @@ for (const file of files) {
 }
 
 const headers = readFileSync(join(root, 'public', '_headers'), 'utf8')
+const wrangler = readFileSync(join(root, 'wrangler.toml'), 'utf8')
 if (!headers.includes('Content-Type: text/html; charset=utf-8')) {
   fail('_headers missing HTML charset Content-Type')
 }
 if (!headers.includes('/sitemap.xml')) {
   fail('_headers missing /sitemap.xml Content-Type')
 }
-if (!headers.includes('application/xml; charset=utf-8')) {
-  fail('_headers missing application/xml Content-Type for sitemap.xml')
+if (!headers.includes('text/xml; charset=utf-8')) {
+  fail('_headers missing text/xml Content-Type for sitemap.xml')
 }
-if (!worker.includes('/sitemap.xml') || !worker.includes('application/xml')) {
-  fail('workers/site.js must serve /sitemap.xml as application/xml for Googlebot')
+if (!headers.includes('/sitemap.txt')) {
+  fail('_headers missing /sitemap.txt Content-Type')
 }
-if (!worker.includes('/robots.txt')) {
-  fail('workers/site.js must serve /robots.txt explicitly')
+if (worker.includes('x-robots-tag') && worker.includes('noindex')) {
+  fail('workers/site.js must not send X-Robots-Tag noindex on sitemap responses')
+}
+if (!wrangler.includes('!/sitemap.xml') || !wrangler.includes('!/sitemap.txt')) {
+  fail('wrangler.toml must serve sitemap.xml and sitemap.txt as static assets')
 }
 
 if (failures.length) {

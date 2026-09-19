@@ -1,35 +1,16 @@
-User-agent: Googlebot
-Allow: /
-Allow: /sitemap.xml
-Allow: /robots.txt
-Allow: /media/
-Allow: /og/
-Allow: /videos/
-
-User-agent: Google-InspectionTool
-Allow: /
-Allow: /sitemap.xml
-Allow: /robots.txt
-Allow: /media/
-Allow: /og/
-Allow: /videos/
-
-User-agent: Bingbot
-Allow: /
-Allow: /sitemap.xml
-Allow: /robots.txt
-Allow: /media/
-Allow: /og/
-Allow: /videos/
-
 User-agent: *
 Allow: /
-Allow: /sitemap.xml
-Allow: /robots.txt
-Allow: /media/
-Allow: /og/
-Allow: /videos/
 Disallow: /404
 Disallow: /404.html
 
+User-agent: Googlebot
+Allow: /
+
+User-agent: Google-InspectionTool
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
 Sitemap: https://warthundercheats.xyz/sitemap.xml
+Sitemap: https://warthundercheats.xyz/sitemap.txt
