@@ -374,8 +374,14 @@ if (!headers.includes('Content-Type: text/html; charset=utf-8')) {
 if (!headers.includes('/sitemap.xml')) {
   fail('_headers missing /sitemap.xml Content-Type')
 }
-if (!headers.includes('text/xml; charset=utf-8')) {
-  fail('_headers missing XML charset Content-Type')
+if (!headers.includes('application/xml; charset=utf-8')) {
+  fail('_headers missing application/xml Content-Type for sitemap.xml')
+}
+if (!worker.includes('/sitemap.xml') || !worker.includes('application/xml')) {
+  fail('workers/site.js must serve /sitemap.xml as application/xml for Googlebot')
+}
+if (!worker.includes('/robots.txt')) {
+  fail('workers/site.js must serve /robots.txt explicitly')
 }
 
 if (failures.length) {
