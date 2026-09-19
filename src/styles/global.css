@@ -116,7 +116,7 @@ body {
   background: #08060f;
 }
 
-/* Hide third-party watermarks on embedded DayZ preview videos */
+/* Hide third-party watermarks on embedded War Thunder preview videos */
 .video-brand-mask {
   position: relative;
   overflow: hidden;
@@ -183,29 +183,30 @@ body {
   outline: none;
   pointer-events: none;
   -webkit-appearance: none;
-  /* Keep footage readable; light violet grade only */
-  filter: saturate(0.85) contrast(1.06) brightness(0.88);
+  /* Dimmer base + cooler purple grade */
+  filter: saturate(0.72) contrast(1.08) brightness(0.58) hue-rotate(18deg);
 }
 
 .hero-video-tint {
   background:
     linear-gradient(
       180deg,
-      rgba(176, 64, 251, 0.18) 0%,
-      rgba(124, 58, 237, 0.1) 45%,
-      rgba(8, 6, 15, 0.45) 100%
+      rgba(88, 28, 135, 0.55) 0%,
+      rgba(76, 29, 149, 0.42) 40%,
+      rgba(8, 6, 15, 0.78) 100%
     ),
-    radial-gradient(ellipse 90% 70% at 50% 20%, rgba(167, 139, 250, 0.16), transparent 65%);
-  mix-blend-mode: soft-light;
-  opacity: 0.7;
+    radial-gradient(ellipse 95% 75% at 55% 25%, rgba(124, 58, 237, 0.35), transparent 70%);
+  mix-blend-mode: multiply;
+  opacity: 0.9;
 }
 
 .hero-video-tint-glow {
   background:
-    radial-gradient(ellipse 80% 50% at 20% 30%, rgba(176, 64, 251, 0.18), transparent 55%),
-    radial-gradient(ellipse 60% 45% at 85% 60%, rgba(124, 58, 237, 0.14), transparent 50%);
+    radial-gradient(ellipse 85% 55% at 18% 28%, rgba(139, 92, 246, 0.28), transparent 58%),
+    radial-gradient(ellipse 65% 50% at 88% 55%, rgba(91, 33, 182, 0.32), transparent 55%),
+    linear-gradient(180deg, rgba(46, 16, 80, 0.25) 0%, transparent 55%);
   mix-blend-mode: soft-light;
-  opacity: 0.55;
+  opacity: 0.75;
 }
 
 .hero-video-bg::-webkit-media-controls,

@@ -19,11 +19,11 @@ export function FaqPage() {
               {SITE_NAME}
             </p>
             <h1 className="mt-3 text-3xl font-semibold tracking-tight text-white sm:text-5xl">
-              DayZ Cheats FAQ
+              War Thunder Cheats FAQ
             </h1>
             <p className="mt-4 text-base leading-relaxed text-white/60">
-              BattlEye status, ESP, Aimbot, radar hack, servers, buying, loading, support and
-              refunds — straight answers before you checkout.
+              Load status, ESP, Aimbot, modules ESP, radar HUD, Steam and Gaijin clients, buying,
+              loading, support and refunds — straight answers before you checkout.
             </p>
           </div>
         </section>
@@ -64,7 +64,7 @@ export function FaqPage() {
                 Still need help?
               </h2>
               <p className="mt-2 max-w-md text-sm text-white/50">
-                Open support for load help, or buy when BattlEye status is clear.
+                Open support for load help, or buy when the status is clear to load.
               </p>
             </div>
             <div className="flex shrink-0 flex-wrap items-center gap-3">
@@ -75,7 +75,7 @@ export function FaqPage() {
                 Support
               </a>
               <CheckoutLink className="cta-gradient inline-flex h-11 items-center justify-center rounded-full px-6 text-sm font-semibold text-white">
-                Buy DayZ Cheats
+                Buy War Thunder Cheats
               </CheckoutLink>
             </div>
           </div>

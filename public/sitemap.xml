@@ -4,412 +4,412 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
         xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
   <url>
-    <loc>https://dayzcheats.io/</loc>
+    <loc>https://warthundercheats.xyz/</loc>
     <lastmod>2026-09-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dayzcheats.io/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://dayzcheats.io/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://warthundercheats.xyz/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://warthundercheats.xyz/" />
     <image:image>
-      <image:loc>https://dayzcheats.io/og/home.jpg</image:loc>
-      <image:title>DayZ Cheats Open Graph</image:title>
-      <image:caption>Google and social preview image for dayzcheats.io homepage.</image:caption>
+      <image:loc>https://warthundercheats.xyz/og/home.jpg</image:loc>
+      <image:title>War Thunder Cheats Open Graph</image:title>
+      <image:caption>Google and social preview image for the warthundercheats.xyz homepage.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://dayzcheats.io/media/dayz-hero-full.webp</image:loc>
-      <image:title>DayZ Cheats Hero</image:title>
-      <image:caption>Buy DayZ cheats - DayZ Aimbot, ESP and radar hack hero artwork for PC.</image:caption>
+      <image:loc>https://warthundercheats.xyz/media/wt-hero-full.webp</image:loc>
+      <image:title>War Thunder Cheats Hero</image:title>
+      <image:caption>Buy War Thunder cheats - WT Aimbot, player ESP and modules ESP hero artwork for PC.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://dayzcheats.io/media/dayz-cover.webp</image:loc>
-      <image:title>DayZ Cheats Product Cover</image:title>
-      <image:caption>DayZ cheats product cover for checkout and social previews.</image:caption>
+      <image:loc>https://warthundercheats.xyz/media/wt-cover.webp</image:loc>
+      <image:title>War Thunder Cheats Product Cover</image:title>
+      <image:caption>War Thunder cheats product cover for checkout and social previews.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://dayzcheats.io/media/dayz-video-thumb.jpg</image:loc>
-      <image:title>DayZ Cheats Preview Thumbnail</image:title>
-      <image:caption>Thumbnail for the DayZ Aimbot and ESP preview video.</image:caption>
+      <image:loc>https://warthundercheats.xyz/media/wt-video-thumb.jpg</image:loc>
+      <image:title>War Thunder Cheats Preview Thumbnail</image:title>
+      <image:caption>Thumbnail for the War Thunder Aimbot and ESP preview video.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://dayzcheats.io/og/dayz-cheats.jpg</image:loc>
-      <image:title>DayZ Cheats Product Social Preview</image:title>
-      <image:caption>Default Open Graph image for dayzcheats.io product pages.</image:caption>
+      <image:loc>https://warthundercheats.xyz/og/warthunder-cheats.jpg</image:loc>
+      <image:title>War Thunder Cheats Product Social Preview</image:title>
+      <image:caption>Default Open Graph image for warthundercheats.xyz product pages.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://dayzcheats.io/dayz-cheats</loc>
+    <loc>https://warthundercheats.xyz/warthunder-cheats</loc>
     <lastmod>2026-09-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dayzcheats.io/dayz-cheats" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://dayzcheats.io/dayz-cheats" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://warthundercheats.xyz/warthunder-cheats" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://warthundercheats.xyz/warthunder-cheats" />
     <image:image>
-      <image:loc>https://dayzcheats.io/og/dayz-cheats.jpg</image:loc>
-      <image:title>DayZ Cheats Open Graph</image:title>
-      <image:caption>Google and social preview for the DayZ cheats product page.</image:caption>
+      <image:loc>https://warthundercheats.xyz/og/warthunder-cheats.jpg</image:loc>
+      <image:title>War Thunder Cheats Open Graph</image:title>
+      <image:caption>Google and social preview for the War Thunder cheats product page.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://dayzcheats.io/media/dayz-cover.webp</image:loc>
-      <image:title>DayZ Aimbot ESP Product Artwork</image:title>
+      <image:loc>https://warthundercheats.xyz/media/wt-cover.webp</image:loc>
+      <image:title>War Thunder Aimbot ESP Product Artwork</image:title>
       <image:caption>Product features, compatibility, status and price before checkout.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://dayzcheats.io/media/dayz-hero-full.webp</image:loc>
-      <image:title>DayZ Cheats Product Hero</image:title>
-      <image:caption>Hero artwork for DayZ Aimbot, ESP and radar hack product details.</image:caption>
+      <image:loc>https://warthundercheats.xyz/media/wt-hero-full.webp</image:loc>
+      <image:title>War Thunder Cheats Product Hero</image:title>
+      <image:caption>Hero artwork for War Thunder Aimbot, player ESP and modules ESP product details.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://dayzcheats.io/media/dayz-menu.gif</image:loc>
-      <image:title>DayZ Cheats Menu Preview</image:title>
-      <image:caption>Menu and Aimbot settings preview for DayZ cheats.</image:caption>
+      <image:loc>https://warthundercheats.xyz/media/wt-menu.gif</image:loc>
+      <image:title>War Thunder Cheats Menu Preview</image:title>
+      <image:caption>Menu and Aimbot settings preview for War Thunder cheats.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://dayzcheats.io/media/dayz-esp-gameplay.gif</image:loc>
-      <image:title>DayZ ESP Gameplay</image:title>
-      <image:caption>Player ESP and wallhack preview for DayZ.</image:caption>
+      <image:loc>https://warthundercheats.xyz/media/wt-esp-gameplay.gif</image:loc>
+      <image:title>War Thunder ESP Gameplay</image:title>
+      <image:caption>Player ESP, modules ESP and wallhack chams preview for War Thunder.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://dayzcheats.io/media/dayz-video-thumb.jpg</image:loc>
-      <image:title>DayZ Cheats Preview Thumbnail</image:title>
-      <image:caption>Thumbnail for the DayZ cheats preview video.</image:caption>
+      <image:loc>https://warthundercheats.xyz/media/wt-video-thumb.jpg</image:loc>
+      <image:title>War Thunder Cheats Preview Thumbnail</image:title>
+      <image:caption>Thumbnail for the War Thunder cheats preview video.</image:caption>
     </image:image>
     <video:video>
-      <video:thumbnail_loc>https://dayzcheats.io/media/dayz-video-thumb.jpg</video:thumbnail_loc>
-      <video:title>DayZ Cheats Aimbot and ESP Preview</video:title>
-      <video:description>Self-hosted DayZ cheats preview showing Aimbot, ESP menu and survival gameplay visuals on PC.</video:description>
-      <video:content_loc>https://dayzcheats.io/videos/dayz-preview.mp4</video:content_loc>
+      <video:thumbnail_loc>https://warthundercheats.xyz/media/wt-video-thumb.jpg</video:thumbnail_loc>
+      <video:title>War Thunder Cheats Aimbot and ESP Preview</video:title>
+      <video:description>Self-hosted War Thunder cheats preview showing silent aim, player ESP, vehicle modules ESP and radar HUD on PC.</video:description>
+      <video:content_loc>https://warthundercheats.xyz/videos/wt-preview.mp4</video:content_loc>
       <video:family_friendly>yes</video:family_friendly>
       <video:live>no</video:live>
     </video:video>
   </url>
   <url>
-    <loc>https://dayzcheats.io/forums</loc>
+    <loc>https://warthundercheats.xyz/forums</loc>
     <lastmod>2026-09-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dayzcheats.io/forums" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://dayzcheats.io/forums" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://warthundercheats.xyz/forums" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://warthundercheats.xyz/forums" />
     <image:image>
-      <image:loc>https://dayzcheats.io/og/forums.jpg</image:loc>
-      <image:title>DayZ Cheats Forums Open Graph</image:title>
-      <image:caption>Google preview image for the DayZ Cheats guides index.</image:caption>
+      <image:loc>https://warthundercheats.xyz/og/forums.jpg</image:loc>
+      <image:title>War Thunder Cheats Forums Open Graph</image:title>
+      <image:caption>Google preview image for the War Thunder Cheats guides index.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://dayzcheats.io/media/dayz-menu.gif</image:loc>
-      <image:title>DayZ Cheats Forum Artwork</image:title>
-      <image:caption>Artwork reference for DayZ setup and feature guides.</image:caption>
+      <image:loc>https://warthundercheats.xyz/media/wt-menu.gif</image:loc>
+      <image:title>War Thunder Cheats Forum Artwork</image:title>
+      <image:caption>Artwork reference for War Thunder setup and feature guides.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://dayzcheats.io/forums/aimbot-settings</loc>
+    <loc>https://warthundercheats.xyz/forums/aimbot-settings</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dayzcheats.io/forums/aimbot-settings" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://dayzcheats.io/forums/aimbot-settings" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://warthundercheats.xyz/forums/aimbot-settings" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://warthundercheats.xyz/forums/aimbot-settings" />
     <image:image>
-      <image:loc>https://dayzcheats.io/og/forums-aimbot-settings.jpg</image:loc>
-      <image:title>DayZ Aimbot Settings for Silent Aim Open Graph</image:title>
-      <image:caption>DayZ Aimbot settings for PC: silent aim, FOV, smoothing and visible-check so your DayZ cheat looks legit on official and private servers. Start conservative, then save configs.</image:caption>
+      <image:loc>https://warthundercheats.xyz/og/forums-aimbot-settings.jpg</image:loc>
+      <image:title>War Thunder Aimbot Settings for Silent Aim Open Graph</image:title>
+      <image:caption>War Thunder Aimbot settings for PC: Silent Aim to Point, aimpoint size, dynamic FOV, Autolead and visible-only checks so your WT cheat stays believable on replay.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://dayzcheats.io/media/dayz-menu.gif</image:loc>
-      <image:title>DayZ Aimbot Settings for Silent Aim Artwork</image:title>
-      <image:caption>Tune DayZ Aimbot FOV, smoothing, hitbox and silent aim so survivor tracking stays effective without looking robotic to spectating admins.</image:caption>
+      <image:loc>https://warthundercheats.xyz/media/wt-menu.gif</image:loc>
+      <image:title>War Thunder Aimbot Settings for Silent Aim Artwork</image:title>
+      <image:caption>Tune War Thunder Aimbot aimpoint size, FOV, Autolead and silent aim so tank and aircraft tracking stays effective without looking obvious on server replay.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://dayzcheats.io/forums/battleye-status</loc>
+    <loc>https://warthundercheats.xyz/forums/complete-setup</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://warthundercheats.xyz/forums/complete-setup" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://warthundercheats.xyz/forums/complete-setup" />
+    <image:image>
+      <image:loc>https://warthundercheats.xyz/og/forums-complete-setup.jpg</image:loc>
+      <image:title>Complete War Thunder Cheats Setup Open Graph</image:title>
+      <image:caption>Complete War Thunder cheats setup for Windows 10 and 11: buy when status is clear, add antivirus exclusions, run the load order for Steam or Gaijin, then configure ESP and Aimbot.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://warthundercheats.xyz/media/wt-hero-full.webp</image:loc>
+      <image:title>Complete War Thunder Cheats Setup Artwork</image:title>
+      <image:caption>Step-by-step War Thunder cheats setup: buy from $35, antivirus exclusions, load order for Steam or Gaijin, enable ESP and Aimbot, save configs, re-check status.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://warthundercheats.xyz/forums/disable-antivirus</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://warthundercheats.xyz/forums/disable-antivirus" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://warthundercheats.xyz/forums/disable-antivirus" />
+    <image:image>
+      <image:loc>https://warthundercheats.xyz/og/forums-disable-antivirus.jpg</image:loc>
+      <image:title>Antivirus Exclusions for War Thunder Cheats Open Graph</image:title>
+      <image:caption>Allowlist War Thunder cheats loaders in Windows Defender and third-party antivirus, restore quarantined files, exclude the delivery folder, then continue setup when status is clear.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://warthundercheats.xyz/media/wt-control-art.jpg</image:loc>
+      <image:title>Antivirus Exclusions for War Thunder Cheats Artwork</image:title>
+      <image:caption>Allowlist War Thunder cheats in Windows Defender and common antivirus so the loader is not quarantined before your first battle.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://warthundercheats.xyz/forums/esp-wallhack-guide</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dayzcheats.io/forums/battleye-status" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://dayzcheats.io/forums/battleye-status" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://warthundercheats.xyz/forums/esp-wallhack-guide" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://warthundercheats.xyz/forums/esp-wallhack-guide" />
     <image:image>
-      <image:loc>https://dayzcheats.io/og/forums-battleye-status.jpg</image:loc>
-      <image:title>DayZ BattlEye Status: Clear to Load vs Updating Open Graph</image:title>
-      <image:caption>DayZ BattlEye status explained for DayZ cheats: clear-to-load vs Updating after patches, why you wait, and how admin bans differ from anti-cheat detections.</image:caption>
+      <image:loc>https://warthundercheats.xyz/og/forums-esp-wallhack-guide.jpg</image:loc>
+      <image:title>War Thunder ESP and Wallhack Setup Open Graph</image:title>
+      <image:caption>War Thunder ESP and wallhack setup: enemy boxes, unit names, distance, reload and repair timers plus chams through terrain. Clean HUD defaults for WT cheats on PC.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://dayzcheats.io/media/dayz-cover.webp</image:loc>
-      <image:title>DayZ BattlEye Status: Clear to Load vs Updating Artwork</image:title>
-      <image:caption>What clear-to-load and Updating mean for DayZ cheats after BattlEye and game patches - and why admin bans are a separate risk.</image:caption>
+      <image:loc>https://warthundercheats.xyz/media/wt-esp-gameplay.gif</image:loc>
+      <image:title>War Thunder ESP and Wallhack Setup Artwork</image:title>
+      <image:caption>Configure War Thunder ESP and wallhack chams for enemy boxes, reload and repair timers, distance and clean colours without flooding your HUD.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://dayzcheats.io/forums/complete-setup</loc>
+    <loc>https://warthundercheats.xyz/forums/features-list</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dayzcheats.io/forums/complete-setup" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://dayzcheats.io/forums/complete-setup" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://warthundercheats.xyz/forums/features-list" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://warthundercheats.xyz/forums/features-list" />
     <image:image>
-      <image:loc>https://dayzcheats.io/og/forums-complete-setup.jpg</image:loc>
-      <image:title>Complete DayZ Cheats Setup Open Graph</image:title>
-      <image:caption>Complete DayZ cheats setup for Windows PC: buy when status is clear, antivirus exclusions, load order, first-run ESP and Aimbot config, then re-check BattlEye after every patch.</image:caption>
+      <image:loc>https://warthundercheats.xyz/og/forums-features-list.jpg</image:loc>
+      <image:title>War Thunder Cheat Features Checklist Open Graph</image:title>
+      <image:caption>War Thunder cheat features checklist: silent aim Aimbot, Autolead, player ESP, vehicle modules ESP, bullet and rocket ESP, World Changer, radar HUD and Map Finder from $35.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://dayzcheats.io/media/dayz-hero-full.webp</image:loc>
-      <image:title>Complete DayZ Cheats Setup Artwork</image:title>
-      <image:caption>Step-by-step DayZ cheats setup: buy from $35, antivirus exclusions, load order, enable ESP and Aimbot, save configs, re-check BattlEye.</image:caption>
+      <image:loc>https://warthundercheats.xyz/media/wt-cover.webp</image:loc>
+      <image:title>War Thunder Cheat Features Checklist Artwork</image:title>
+      <image:caption>Checklist of every War Thunder cheat module on warthundercheats.xyz - silent aim, Autolead, player ESP, vehicle modules ESP, bullet and rocket ESP, radar HUD and Map Finder - before you open checkout from $35.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://dayzcheats.io/forums/disable-antivirus</loc>
-    <lastmod>2026-09-17</lastmod>
+    <loc>https://warthundercheats.xyz/forums/hotkeys</loc>
+    <lastmod>2026-09-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dayzcheats.io/forums/disable-antivirus" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://dayzcheats.io/forums/disable-antivirus" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://warthundercheats.xyz/forums/hotkeys" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://warthundercheats.xyz/forums/hotkeys" />
     <image:image>
-      <image:loc>https://dayzcheats.io/og/forums-disable-antivirus.jpg</image:loc>
-      <image:title>Antivirus Exclusions for DayZ Cheats Open Graph</image:title>
-      <image:caption>Allowlist DayZ cheats loaders in Windows Defender and third-party antivirus before you load. Restore quarantines, exclude the delivery folder, then continue setup when status is clear.</image:caption>
+      <image:loc>https://warthundercheats.xyz/og/forums-hotkeys.jpg</image:loc>
+      <image:title>War Thunder Cheats Hotkeys After Load Open Graph</image:title>
+      <image:caption>War Thunder cheats hotkeys after checkout: open the menu, aimpoint key, ESP toggles, no trees and no smoke keys, Free Camera and stream-proof binds for battle use.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://dayzcheats.io/media/dayz-control-art.jpg</image:loc>
-      <image:title>Antivirus Exclusions for DayZ Cheats Artwork</image:title>
-      <image:caption>Allowlist DayZ cheats in Windows Defender and common antivirus so the loader is not quarantined before first run.</image:caption>
+      <image:loc>https://warthundercheats.xyz/media/wt-menu.gif</image:loc>
+      <image:title>War Thunder Cheats Hotkeys After Load Artwork</image:title>
+      <image:caption>Menu and toggle hotkeys for War Thunder cheats after a clean load - Aimbot, ESP, modules ESP, no trees, Free Camera and stream-proof binds.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://dayzcheats.io/forums/esp-wallhack-guide</loc>
-    <lastmod>2026-09-17</lastmod>
+    <loc>https://warthundercheats.xyz/forums/loader-errors</loc>
+    <lastmod>2026-09-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dayzcheats.io/forums/esp-wallhack-guide" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://dayzcheats.io/forums/esp-wallhack-guide" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://warthundercheats.xyz/forums/loader-errors" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://warthundercheats.xyz/forums/loader-errors" />
     <image:image>
-      <image:loc>https://dayzcheats.io/og/forums-esp-wallhack-guide.jpg</image:loc>
-      <image:title>DayZ ESP and Wallhack Setup Open Graph</image:title>
-      <image:caption>DayZ ESP and wallhack setup: survivor boxes, skeletons, distance, health, infected ESP and loot highlighting. Clean HUD defaults for DayZ cheats on PC.</image:caption>
+      <image:loc>https://warthundercheats.xyz/og/forums-loader-errors.jpg</image:loc>
+      <image:title>Fix War Thunder Cheats Loader Errors Open Graph</image:title>
+      <image:caption>Fix War Thunder cheats loader errors on Windows: antivirus quarantine, overlay conflicts, failed load and the menu not opening. Check status first, then escalate with your order ID.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://dayzcheats.io/media/dayz-esp-gameplay.gif</image:loc>
-      <image:title>DayZ ESP and Wallhack Setup Artwork</image:title>
-      <image:caption>Configure DayZ ESP and wallhack for survivor boxes, infected tracking and loot highlighting without flooding your HUD.</image:caption>
+      <image:loc>https://warthundercheats.xyz/media/wt-tactical-art.jpg</image:loc>
+      <image:title>Fix War Thunder Cheats Loader Errors Artwork</image:title>
+      <image:caption>Troubleshoot War Thunder cheats loader errors - menu not opening, instant close, antivirus quarantine and failed load on Steam or Gaijin clients.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://dayzcheats.io/forums/features-list</loc>
-    <lastmod>2026-09-17</lastmod>
+    <loc>https://warthundercheats.xyz/forums/map-finder-guide</loc>
+    <lastmod>2026-09-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dayzcheats.io/forums/features-list" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://dayzcheats.io/forums/features-list" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://warthundercheats.xyz/forums/map-finder-guide" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://warthundercheats.xyz/forums/map-finder-guide" />
     <image:image>
-      <image:loc>https://dayzcheats.io/og/forums-features-list.jpg</image:loc>
-      <image:title>DayZ Cheat Features Checklist Open Graph</image:title>
-      <image:caption>DayZ cheat features checklist: silent aim Aimbot, player ESP, loot ESP, wallhack, radar hack and spoofer on dayzcheats.io from $35. Compare modules before you buy.</image:caption>
+      <image:loc>https://warthundercheats.xyz/og/forums-map-finder-guide.jpg</image:loc>
+      <image:title>War Thunder Map Finder: Skip Maps You Hate Open Graph</image:title>
+      <image:caption>War Thunder Map Finder guide: filter maps during matchmaking, allow only preferred locations, avoid blacklisted maps and auto-restart the queue with a safe restart delay.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://dayzcheats.io/media/dayz-cover.webp</image:loc>
-      <image:title>DayZ Cheat Features Checklist Artwork</image:title>
-      <image:caption>Checklist of every DayZ cheat module on dayzcheats.io - silent aim, player ESP, loot ESP, wallhack, radar hack and spoofer - before you open checkout from $35.</image:caption>
+      <image:loc>https://warthundercheats.xyz/media/wt-box.jpg</image:loc>
+      <image:title>War Thunder Map Finder: Skip Maps You Hate Artwork</image:title>
+      <image:caption>Use Map Finder to filter War Thunder maps during matchmaking, auto-restart the queue on blacklisted locations and only load into battles you want.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://dayzcheats.io/forums/hotkeys</loc>
-    <lastmod>2026-09-17</lastmod>
+    <loc>https://warthundercheats.xyz/forums/modules-esp-guide</loc>
+    <lastmod>2026-09-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dayzcheats.io/forums/hotkeys" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://dayzcheats.io/forums/hotkeys" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://warthundercheats.xyz/forums/modules-esp-guide" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://warthundercheats.xyz/forums/modules-esp-guide" />
     <image:image>
-      <image:loc>https://dayzcheats.io/og/forums-hotkeys.jpg</image:loc>
-      <image:title>DayZ Cheats Hotkeys After Load Open Graph</image:title>
-      <image:caption>DayZ cheats hotkeys after checkout: open menu, Aimbot toggle, player ESP, loot ESP, radar hack and stream-proof binds. Keep panic keys minimal for field use.</image:caption>
+      <image:loc>https://warthundercheats.xyz/og/forums-modules-esp-guide.jpg</image:loc>
+      <image:title>War Thunder Modules ESP: Crew, Engine and Ammo Open Graph</image:title>
+      <image:caption>War Thunder modules ESP guide: highlight commander, gunner, loader and driver plus engine, transmission, hull and turret ammo, gun barrel and breech for one-shot kills.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://dayzcheats.io/media/dayz-menu.gif</image:loc>
-      <image:title>DayZ Cheats Hotkeys After Load Artwork</image:title>
-      <image:caption>Menu and toggle hotkeys for DayZ cheats after a clean load - Aimbot, ESP, loot ESP, radar and panic binds.</image:caption>
+      <image:loc>https://warthundercheats.xyz/media/wt-esp-gameplay.gif</image:loc>
+      <image:title>War Thunder Modules ESP: Crew, Engine and Ammo Artwork</image:title>
+      <image:caption>Use War Thunder vehicle modules ESP to see crew positions, engine, transmission, ammo racks, barrel and breech so every shell hits something that matters.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://dayzcheats.io/forums/loader-errors</loc>
-    <lastmod>2026-09-17</lastmod>
+    <loc>https://warthundercheats.xyz/forums/radar-hud-guide</loc>
+    <lastmod>2026-09-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dayzcheats.io/forums/loader-errors" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://dayzcheats.io/forums/loader-errors" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://warthundercheats.xyz/forums/radar-hud-guide" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://warthundercheats.xyz/forums/radar-hud-guide" />
     <image:image>
-      <image:loc>https://dayzcheats.io/og/forums-loader-errors.jpg</image:loc>
-      <image:title>Fix DayZ Cheats Loader Errors Open Graph</image:title>
-      <image:caption>Fix DayZ cheats loader errors on Windows: antivirus quarantine, overlays, failed inject and menu not opening. Confirm BattlEye status is clear first, then escalate with your order ID.</image:caption>
+      <image:loc>https://warthundercheats.xyz/og/forums-radar-hud-guide.jpg</image:loc>
+      <image:title>War Thunder Radar and HUD Tools Guide Open Graph</image:title>
+      <image:caption>War Thunder radar and HUD guide: extended radar with direction indication, gun ballistics, aim prediction, map air and ground markers, damage indicator and HUD presets.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://dayzcheats.io/media/dayz-tactical-art.jpg</image:loc>
-      <image:title>Fix DayZ Cheats Loader Errors Artwork</image:title>
-      <image:caption>Troubleshoot DayZ cheats loader errors - menu not opening, instant close, antivirus quarantine and failed inject.</image:caption>
+      <image:loc>https://warthundercheats.xyz/media/wt-menu.gif</image:loc>
+      <image:title>War Thunder Radar and HUD Tools Guide Artwork</image:title>
+      <image:caption>Set up the War Thunder radar, gun ballistics, aim prediction, map markers and damage indicator so you always know where the battle is going.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://dayzcheats.io/forums/radar-hack-guide</loc>
-    <lastmod>2026-09-17</lastmod>
+    <loc>https://warthundercheats.xyz/forums/status-checklist</loc>
+    <lastmod>2026-09-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dayzcheats.io/forums/radar-hack-guide" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://dayzcheats.io/forums/radar-hack-guide" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://warthundercheats.xyz/forums/status-checklist" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://warthundercheats.xyz/forums/status-checklist" />
     <image:image>
-      <image:loc>https://dayzcheats.io/og/forums-radar-hack-guide.jpg</image:loc>
-      <image:title>DayZ Radar Hack Overlay Guide Open Graph</image:title>
-      <image:caption>DayZ radar hack guide for PC: 2D radar overlay, off-screen survivor tracking and safer military loot approaches. Pair with ESP for DayZ cheats that stay readable.</image:caption>
+      <image:loc>https://warthundercheats.xyz/og/forums-status-checklist.jpg</image:loc>
+      <image:title>Status Checklist Before You Buy or Load Open Graph</image:title>
+      <image:caption>War Thunder cheats status checklist: what clear-to-load and Updating mean after Gaijin updates, when to wait, and how to check before checkout and before every session.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://dayzcheats.io/media/dayz-menu.gif</image:loc>
-      <image:title>DayZ Radar Hack Overlay Guide Artwork</image:title>
-      <image:caption>Use the DayZ radar hack 2D overlay to track off-screen survivors, avoid third parties and approach military loot safer.</image:caption>
+      <image:loc>https://warthundercheats.xyz/media/wt-cover.webp</image:loc>
+      <image:title>Status Checklist Before You Buy or Load Artwork</image:title>
+      <image:caption>Short status checklist for War Thunder cheats - confirm clear-to-load before checkout and before every session after a Gaijin update.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://dayzcheats.io/forums/raid-play-guide</loc>
-    <lastmod>2026-09-17</lastmod>
+    <loc>https://warthundercheats.xyz/forums/stream-proof-setup</loc>
+    <lastmod>2026-09-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dayzcheats.io/forums/raid-play-guide" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://dayzcheats.io/forums/raid-play-guide" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://warthundercheats.xyz/forums/stream-proof-setup" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://warthundercheats.xyz/forums/stream-proof-setup" />
     <image:image>
-      <image:loc>https://dayzcheats.io/og/forums-raid-play-guide.jpg</image:loc>
-      <image:title>Safer DayZ Cheat Settings for Loot Runs Open Graph</image:title>
-      <image:caption>Safer DayZ cheat settings for loot runs and survival: ESP-first play, mild silent aim, loot highlighting, radar hack and BattlEye habits that reduce report risk on private servers.</image:caption>
+      <image:loc>https://warthundercheats.xyz/og/forums-stream-proof-setup.jpg</image:loc>
+      <image:title>Stream-Proof War Thunder Cheats for OBS Open Graph</image:title>
+      <image:caption>Stream-proof War Thunder cheats for OBS and clips: keep ESP, chams and HUD overlays off recordings while you still see them locally. Test with a private capture first.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://dayzcheats.io/media/dayz-box.jpg</image:loc>
-      <image:title>Safer DayZ Cheat Settings for Loot Runs Artwork</image:title>
-      <image:caption>Safer DayZ cheat defaults for survival and loot runs - ESP-first play, mild silent aim, radar awareness and report-conscious habits.</image:caption>
+      <image:loc>https://warthundercheats.xyz/media/wt-home-art.jpg</image:loc>
+      <image:title>Stream-Proof War Thunder Cheats for OBS Artwork</image:title>
+      <image:caption>Hide War Thunder ESP, chams and HUD overlays from OBS and capture tools with stream-proof mode, and keep replays clean too.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://dayzcheats.io/forums/stream-proof-setup</loc>
-    <lastmod>2026-09-17</lastmod>
+    <loc>https://warthundercheats.xyz/forums/windows-setup</loc>
+    <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dayzcheats.io/forums/stream-proof-setup" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://dayzcheats.io/forums/stream-proof-setup" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://warthundercheats.xyz/forums/windows-setup" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://warthundercheats.xyz/forums/windows-setup" />
     <image:image>
-      <image:loc>https://dayzcheats.io/og/forums-stream-proof-setup.jpg</image:loc>
-      <image:title>Stream-Proof DayZ Cheats for OBS Open Graph</image:title>
-      <image:caption>Stream-proof DayZ cheats for OBS and clips: keep ESP, wallhack and Aimbot overlays off recordings while you still see them locally. Test with a private capture first.</image:caption>
+      <image:loc>https://warthundercheats.xyz/og/forums-windows-setup.jpg</image:loc>
+      <image:title>War Thunder Cheats on Windows 10 and 11 Open Graph</image:title>
+      <image:caption>Windows 10 and 11 setup for War Thunder cheats: close overlays, add Defender exclusions, launch with the right permissions and run a clean first load on Steam or Gaijin.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://dayzcheats.io/media/dayz-home-art.jpg</image:loc>
-      <image:title>Stream-Proof DayZ Cheats for OBS Artwork</image:title>
-      <image:caption>Hide DayZ ESP, loot highlighting and Aimbot overlays from OBS and capture tools with stream-proof mode.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://dayzcheats.io/forums/undetected-status</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dayzcheats.io/forums/undetected-status" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://dayzcheats.io/forums/undetected-status" />
-    <image:image>
-      <image:loc>https://dayzcheats.io/og/forums-undetected-status.jpg</image:loc>
-      <image:title>BattlEye Status Checklist Before You Buy or Load Open Graph</image:title>
-      <image:caption>BattlEye status checklist for DayZ cheats: confirm clear-to-load before checkout and before every post-patch session. Wait when Updating; buy from $35 when status is live.</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://dayzcheats.io/media/dayz-cover.webp</image:loc>
-      <image:title>BattlEye Status Checklist Before You Buy or Load Artwork</image:title>
-      <image:caption>Short BattlEye status checklist for DayZ cheats - confirm clear-to-load before checkout and before every post-patch session.</image:caption>
+      <image:loc>https://warthundercheats.xyz/media/wt-hero-full.webp</image:loc>
+      <image:title>War Thunder Cheats on Windows 10 and 11 Artwork</image:title>
+      <image:caption>Windows 10/11 prep for War Thunder cheats - overlays, Defender exclusions, permissions and a clean first launch on the Steam or Gaijin client.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://dayzcheats.io/forums/windows-setup</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dayzcheats.io/forums/windows-setup" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://dayzcheats.io/forums/windows-setup" />
-    <image:image>
-      <image:loc>https://dayzcheats.io/og/forums-windows-setup.jpg</image:loc>
-      <image:title>DayZ Cheats on Windows 10 and 11 Open Graph</image:title>
-      <image:caption>Windows 10 and 11 setup for DayZ cheats: close overlays, add Defender exclusions, launch with correct permissions and run a clean first load against BattlEye.</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://dayzcheats.io/media/dayz-hero-full.webp</image:loc>
-      <image:title>DayZ Cheats on Windows 10 and 11 Artwork</image:title>
-      <image:caption>Windows 10/11 prep for DayZ cheats - overlays, Defender exclusions, admin rights and a clean first launch against BattlEye.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://dayzcheats.io/reviews</loc>
+    <loc>https://warthundercheats.xyz/reviews</loc>
     <lastmod>2026-09-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dayzcheats.io/reviews" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://dayzcheats.io/reviews" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://warthundercheats.xyz/reviews" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://warthundercheats.xyz/reviews" />
     <image:image>
-      <image:loc>https://dayzcheats.io/og/reviews.jpg</image:loc>
-      <image:title>DayZ Cheats Reviews Open Graph</image:title>
-      <image:caption>Google preview image for DayZ cheats reviews.</image:caption>
+      <image:loc>https://warthundercheats.xyz/og/reviews.jpg</image:loc>
+      <image:title>War Thunder Cheats Reviews Open Graph</image:title>
+      <image:caption>Google preview image for War Thunder cheats reviews.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://dayzcheats.io/faq</loc>
+    <loc>https://warthundercheats.xyz/faq</loc>
     <lastmod>2026-09-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dayzcheats.io/faq" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://dayzcheats.io/faq" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://warthundercheats.xyz/faq" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://warthundercheats.xyz/faq" />
     <image:image>
-      <image:loc>https://dayzcheats.io/og/faq.jpg</image:loc>
-      <image:title>DayZ Cheats FAQ Open Graph</image:title>
-      <image:caption>Google preview image for the DayZ Cheats FAQ.</image:caption>
+      <image:loc>https://warthundercheats.xyz/og/faq.jpg</image:loc>
+      <image:title>War Thunder Cheats FAQ Open Graph</image:title>
+      <image:caption>Google preview image for the War Thunder Cheats FAQ.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://dayzcheats.io/support</loc>
+    <loc>https://warthundercheats.xyz/support</loc>
     <lastmod>2026-09-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dayzcheats.io/support" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://dayzcheats.io/support" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://warthundercheats.xyz/support" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://warthundercheats.xyz/support" />
     <image:image>
-      <image:loc>https://dayzcheats.io/og/support.jpg</image:loc>
-      <image:title>DayZ Cheats Support Open Graph</image:title>
-      <image:caption>Google preview image for DayZ Cheats support.</image:caption>
+      <image:loc>https://warthundercheats.xyz/og/support.jpg</image:loc>
+      <image:title>War Thunder Cheats Support Open Graph</image:title>
+      <image:caption>Google preview image for War Thunder Cheats support.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://dayzcheats.io/privacy</loc>
+    <loc>https://warthundercheats.xyz/privacy</loc>
     <lastmod>2026-09-19</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dayzcheats.io/privacy" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://dayzcheats.io/privacy" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://warthundercheats.xyz/privacy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://warthundercheats.xyz/privacy" />
     <image:image>
-      <image:loc>https://dayzcheats.io/og/privacy.jpg</image:loc>
-      <image:title>DayZ Cheats Privacy Policy</image:title>
-      <image:caption>Privacy policy preview for dayzcheats.io orders and support.</image:caption>
+      <image:loc>https://warthundercheats.xyz/og/privacy.jpg</image:loc>
+      <image:title>War Thunder Cheats Privacy Policy</image:title>
+      <image:caption>Privacy policy preview for warthundercheats.xyz orders and support.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://dayzcheats.io/refunds</loc>
+    <loc>https://warthundercheats.xyz/refunds</loc>
     <lastmod>2026-09-19</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.45</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dayzcheats.io/refunds" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://dayzcheats.io/refunds" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://warthundercheats.xyz/refunds" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://warthundercheats.xyz/refunds" />
     <image:image>
-      <image:loc>https://dayzcheats.io/og/refunds.jpg</image:loc>
-      <image:title>DayZ Cheats Refund Policy</image:title>
-      <image:caption>Refund rules preview for digital DayZ Cheats licenses.</image:caption>
+      <image:loc>https://warthundercheats.xyz/og/refunds.jpg</image:loc>
+      <image:title>War Thunder Cheats Refund Policy</image:title>
+      <image:caption>Refund rules preview for digital War Thunder Cheats licenses.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://dayzcheats.io/terms</loc>
+    <loc>https://warthundercheats.xyz/terms</loc>
     <lastmod>2026-09-19</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dayzcheats.io/terms" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://dayzcheats.io/terms" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://warthundercheats.xyz/terms" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://warthundercheats.xyz/terms" />
     <image:image>
-      <image:loc>https://dayzcheats.io/og/terms.jpg</image:loc>
-      <image:title>DayZ Cheats Terms of Use</image:title>
-      <image:caption>License terms preview for DayZ Cheats.</image:caption>
+      <image:loc>https://warthundercheats.xyz/og/terms.jpg</image:loc>
+      <image:title>War Thunder Cheats Terms of Use</image:title>
+      <image:caption>License terms preview for War Thunder Cheats.</image:caption>
     </image:image>
   </url>
 </urlset>

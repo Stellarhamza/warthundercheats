@@ -28,8 +28,8 @@ const imageType = isOgJpeg
     : image.endsWith('.gif')
       ? 'image/gif'
       : 'image/jpeg'
-const imageWidth = isOgJpeg ? 1200 : image.includes('/media/dayz-') ? 800 : 1200
-const imageHeight = isOgJpeg ? 630 : image.includes('/media/dayz-') ? 450 : 630
+const imageWidth = isOgJpeg ? 1200 : image.includes('/media/wt-') ? 800 : 1200
+const imageHeight = isOgJpeg ? 630 : image.includes('/media/wt-') ? 450 : 630
 const robots =
   seo.robots ||
   'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'
@@ -38,7 +38,7 @@ const isHome = seo.path === '/' || seo.path === ''
 /** Preload OG only when it supports LCP (hero/product/forums) — not text pages */
 const preloadOg =
   isHome ||
-  seo.path === '/dayz-cheats' ||
+  seo.path === '/warthunder-cheats' ||
   seo.path === '/forums' ||
   seo.path.startsWith('/forums/')
 ---
@@ -61,7 +61,7 @@ const preloadOg =
       <link
         rel="preload"
         as="image"
-        href="/media/dayz-hero-full.webp"
+        href="/media/wt-hero-full.webp"
         type="image/webp"
         fetchpriority="high"
       />

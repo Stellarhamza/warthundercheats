@@ -1,10 +1,10 @@
 /**
  * Canonical 1200x630 JPEG Open Graph images for Google SERP thumbnails.
- * Every indexed URL maps to a unique crawlable /og/*.jpg under dayzcheats.io.
+ * Every indexed URL maps to a unique crawlable /og/*.jpg under warthundercheats.xyz.
  */
 
 export const OG_HOME = '/og/home.jpg'
-export const OG_PRODUCT = '/og/dayz-cheats.jpg'
+export const OG_PRODUCT = '/og/warthunder-cheats.jpg'
 export const OG_FORUMS = '/og/forums.jpg'
 export const OG_REVIEWS = '/og/reviews.jpg'
 export const OG_FAQ = '/og/faq.jpg'
@@ -14,7 +14,7 @@ export const OG_TERMS = '/og/terms.jpg'
 export const OG_REFUNDS = '/og/refunds.jpg'
 
 /** Default share image (product). */
-export const DAYZ_OG = OG_PRODUCT
+export const WT_OG = OG_PRODUCT
 
 export function forumOgImage(slug: string) {
   return `/og/forums-${slug}.jpg`
@@ -23,7 +23,7 @@ export function forumOgImage(slug: string) {
 /** Resolve the Open Graph JPEG for any site path. */
 export function getOgImageForPath(path?: string): string {
   if (!path || path === '/') return OG_HOME
-  if (path === '/dayz-cheats' || path === '/dayz-hacks') return OG_PRODUCT
+  if (path === '/warthunder-cheats' || path === '/warthunder-hacks') return OG_PRODUCT
   if (path === '/forums') return OG_FORUMS
   if (path === '/reviews') return OG_REVIEWS
   if (path === '/faq') return OG_FAQ

@@ -32,4 +32,4 @@ Allow: /videos/
 Disallow: /404
 Disallow: /404.html
 
-Sitemap: https://dayzcheats.io/sitemap.xml
+Sitemap: https://warthundercheats.xyz/sitemap.xml

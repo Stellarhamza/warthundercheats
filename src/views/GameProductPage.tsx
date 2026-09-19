@@ -15,13 +15,13 @@ import { FaqSection } from '../components/FaqSection'
 import { CheckoutLink } from '../components/CheckoutLink'
 import { NotFoundPage } from './NotFoundPage'
 import { blogPath } from '../data/blogs'
-import { DAYZ_HOME_VIDEO } from '../data/media'
-import { DayZPreview } from '../components/DayZPreview'
+import { WT_HOME_VIDEO } from '../data/media'
+import { GamePreview } from '../components/GamePreview'
 
 function ProductPurchaseCard({ game }: { game: Game }) {
   return (
     <div className="overflow-hidden rounded-2xl border border-z-soft/15 bg-[rgba(20,16,31,0.95)] sm:rounded-3xl">
-      <CheckoutLink className="block" aria-label="Buy DayZ Cheats">
+      <CheckoutLink className="block" aria-label="Buy War Thunder Cheats">
         <GameCover
           slug={game.slug}
           name={game.name}
@@ -32,9 +32,9 @@ function ProductPurchaseCard({ game }: { game: Game }) {
       </CheckoutLink>
       <div className="p-5 sm:p-6">
         <div className="flex items-center gap-3">
-          <div className="icon-well shrink-0 text-sm font-bold">DZ</div>
+          <div className="icon-well shrink-0 text-sm font-bold">WT</div>
           <div className="min-w-0">
-            <p className="truncate text-sm font-semibold text-white">DayZ Cheats</p>
+            <p className="truncate text-sm font-semibold text-white">War Thunder Cheats</p>
             <p className="text-xs text-white/45">
               {game.status} · From ${PRODUCT_PRICE_USD}
             </p>
@@ -42,10 +42,10 @@ function ProductPurchaseCard({ game }: { game: Game }) {
         </div>
 
         <CheckoutLink className="cta-gradient mt-5 block w-full rounded-full py-3.5 text-center text-sm font-semibold text-white transition-opacity hover:opacity-90">
-          Buy DayZ Cheats
+          Buy War Thunder Cheats
         </CheckoutLink>
         <p className="mt-3 text-center text-[11px] text-white/40">
-          Instant delivery · Check BattlEye status first
+          Instant delivery · Check load status first
         </p>
       </div>
     </div>
@@ -97,15 +97,16 @@ export function GameProductPage({ guideSlug }: GameProductPageProps) {
               <div className="lg:col-span-7">
                 <span className="inline-flex items-center gap-1.5 text-xs text-z-soft">
                   <Shield className="h-3.5 w-3.5 shrink-0" strokeWidth={1.75} />
-                  {game.status} · DayZ Standalone · BattlEye · {SITE_HOST}
+                  {game.status} · War Thunder · Steam & Gaijin · {SITE_HOST}
                 </span>
 
                 <h1 className="mt-3 text-2xl font-semibold leading-tight tracking-tight text-white sm:text-4xl lg:text-[2.75rem] lg:leading-[1.1]">
-                  DayZ Cheats Price & Checkout
+                  War Thunder Cheats Price & Checkout
                 </h1>
                 <p className="mt-3 max-w-xl text-sm leading-relaxed text-white/55 sm:mt-4 sm:text-base">
-                  Silent aim Aimbot, ESP, wallhack, loot ESP and radar hack for DayZ Standalone on
-                  PC. Confirm BattlEye status, then checkout — worldwide delivery.
+                  Silent aim Aimbot with Autolead, player ESP, vehicle modules ESP, wallhack chams,
+                  radar HUD and Map Finder for War Thunder on PC. Confirm load status, then
+                  checkout — worldwide delivery.
                 </p>
 
                 <div className="mt-6 lg:hidden">
@@ -134,13 +135,13 @@ export function GameProductPage({ guideSlug }: GameProductPageProps) {
                 <div className="mt-12 space-y-8 text-sm leading-relaxed text-white/55">
                   <div>
                     <h2 className="text-lg font-semibold tracking-tight text-white sm:text-xl">
-                      Servers & BattlEye
+                      Clients & load status
                     </h2>
                     <p className="mt-3">
-                      Runs on official DayZ servers and most common private mod setups. After a
-                      client or BattlEye patch, status may show Updating until tested —{' '}
-                      {SITE_NAME} publishes live status so you are not buying a dead loader. Status
-                      first, load second.
+                      Runs on Windows 10 and 11 with both the Steam and Gaijin launcher versions of
+                      War Thunder. After a War Thunder or Gaijin patch, status may show Updating
+                      until tested — {SITE_NAME} publishes live status so you are not buying a dead
+                      loader. Status first, load second.
                     </p>
                   </div>
 
@@ -170,8 +171,8 @@ export function GameProductPage({ guideSlug }: GameProductPageProps) {
                   <h2 className="text-lg font-semibold tracking-tight text-white sm:text-xl">
                     Feature preview
                   </h2>
-                  <p className="mt-2 text-sm text-white/45">{DAYZ_HOME_VIDEO.caption}</p>
-                  <DayZPreview className="mt-4" />
+                  <p className="mt-2 text-sm text-white/45">{WT_HOME_VIDEO.caption}</p>
+                  <GamePreview className="mt-4" />
                 </div>
               </div>
 
@@ -185,13 +186,13 @@ export function GameProductPage({ guideSlug }: GameProductPageProps) {
         </section>
 
         <FaqSection
-          heading="DayZ Cheats product FAQ"
-          intro="Status, features, server support, delivery and load questions before checkout."
+          heading="War Thunder Cheats product FAQ"
+          intro="Status, features, client support, delivery and load questions before checkout."
           items={PRODUCT_PAGE_FAQS}
         />
       </main>
 
-      <SiteFooter currentPath="/dayz-cheats" />
+      <SiteFooter currentPath="/warthunder-cheats" />
     </div>
   )
 }

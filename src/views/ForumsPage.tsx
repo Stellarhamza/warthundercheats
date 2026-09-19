@@ -32,8 +32,8 @@ export function ForumsPage({ initialQuery = '' }: ForumsPageProps) {
     <div className="min-h-screen overflow-x-hidden bg-z-bg text-white">
       <section className="relative flex min-h-[60vh] flex-col overflow-x-clip sm:min-h-[65vh]">
         <VideoBg
-          image="/media/dayz-hero-full.webp"
-          imageAlt="DayZ cheats Aimbot and ESP product artwork"
+          image="/media/wt-hero-full.webp"
+          imageAlt="War Thunder cheats Aimbot and ESP product artwork"
         />
         <div className="relative z-20 flex min-h-[60vh] flex-col sm:min-h-[65vh]">
           <Navbar onVideo />
@@ -43,11 +43,12 @@ export function ForumsPage({ initialQuery = '' }: ForumsPageProps) {
                 Forums · Setup · {SITE_HOST}
               </p>
               <h1 className="text-3xl font-semibold tracking-tight text-white sm:text-5xl">
-                DayZ Cheats Guides
+                War Thunder Cheats Guides
               </h1>
               <p className="mt-4 max-w-2xl text-base leading-relaxed text-white/70">
-                Setup threads for DayZ Cheats — features, hotkeys, complete setup,
-                disable antivirus, how to load, and live BattlEye status before you checkout.
+                Setup threads for War Thunder Cheats — features, Aimbot and Autolead tuning, modules
+                ESP, radar HUD, Map Finder, hotkeys, antivirus exclusions and live load status
+                before you checkout.
               </p>
               <div className="relative z-50 mt-7">
                 <HeroSearch
@@ -70,17 +71,17 @@ export function ForumsPage({ initialQuery = '' }: ForumsPageProps) {
             <div className="page-card mb-10 flex flex-col gap-4 rounded-2xl p-6 sm:flex-row sm:items-center sm:justify-between sm:p-8">
               <div>
                 <p className="text-xs uppercase tracking-wider text-white/45">Product</p>
-                <h2 className="mt-1 text-xl font-semibold text-white">DayZ Cheats</h2>
+                <h2 className="mt-1 text-xl font-semibold text-white">War Thunder Cheats</h2>
                 <p className="mt-2 max-w-xl text-sm text-white/55">
-                  Buy ESP, wallhack & silent aim Aimbot for DayZ Standalone — live BattlEye status
-                  before checkout.
+                  Buy player ESP, modules ESP, wallhack chams & silent aim Aimbot for War Thunder —
+                  live load status before checkout.
                 </p>
               </div>
               <a
-                href={guidePath('dayz')}
+                href={guidePath('warthunder')}
                 className="cta-gradient inline-flex shrink-0 items-center justify-center rounded-full px-6 py-3 text-sm font-medium text-white"
               >
-                Buy DayZ Cheats
+                Buy War Thunder Cheats
               </a>
             </div>
 

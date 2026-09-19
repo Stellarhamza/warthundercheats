@@ -1,6 +1,6 @@
 ﻿# Cloudflare Workers + static assets — required so CI `npx wrangler deploy` succeeds.
 # (Dashboard is locked to that command; `wrangler pages deploy` is not used.)
-name = "dayzqrh"
+name = "warthundercheats"
 main = "workers/site.js"
 compatibility_date = "2026-09-12"
 
@@ -10,11 +10,11 @@ compatibility_date = "2026-09-12"
 command = "npm run build"
 
 [[routes]]
-pattern = "dayzcheats.io"
+pattern = "warthundercheats.xyz"
 custom_domain = true
 
 [[routes]]
-pattern = "www.dayzcheats.io"
+pattern = "www.warthundercheats.xyz"
 custom_domain = true
 
 [assets]

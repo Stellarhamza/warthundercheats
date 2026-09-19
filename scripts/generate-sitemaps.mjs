@@ -10,21 +10,22 @@ const root = join(dirname(fileURLToPath(import.meta.url)), '..')
 const publicDir = join(root, 'public')
 const dataDir = join(root, 'src', 'data')
 const pagesDir = join(root, 'src', 'pages')
-const SITE = (process.env.SITE_URL || 'https://dayzcheats.io').replace(/\/$/, '')
+const HOST = 'warthundercheats.xyz'
+const SITE = (process.env.SITE_URL || `https://${HOST}`).replace(/\/$/, '')
 const TODAY = new Date().toLocaleDateString('en-CA')
 const HREFLANG = ['en', 'x-default']
 
-const HERO_FULL = '/media/dayz-hero-full.webp'
-const COVER = '/media/dayz-cover.webp'
-const BOX = '/media/dayz-box.jpg'
-const ESP = '/media/dayz-esp-gameplay.gif'
-const MENU = '/media/dayz-menu.gif'
-const CONTROL = '/media/dayz-control-art.jpg'
-const HOME_ART = '/media/dayz-home-art.jpg'
-const TACTICAL_ART = '/media/dayz-tactical-art.jpg'
-const VIDEO_THUMB = '/media/dayz-video-thumb.jpg'
-const PREVIEW_VIDEO = '/videos/dayz-preview.mp4'
-const OG_DEFAULT = '/og/dayz-cheats.jpg'
+const HERO_FULL = '/media/wt-hero-full.webp'
+const COVER = '/media/wt-cover.webp'
+const BOX = '/media/wt-box.jpg'
+const ESP = '/media/wt-esp-gameplay.gif'
+const MENU = '/media/wt-menu.gif'
+const CONTROL = '/media/wt-control-art.jpg'
+const HOME_ART = '/media/wt-home-art.jpg'
+const TACTICAL_ART = '/media/wt-tactical-art.jpg'
+const VIDEO_THUMB = '/media/wt-video-thumb.jpg'
+const PREVIEW_VIDEO = '/videos/wt-preview.mp4'
+const OG_DEFAULT = '/og/warthunder-cheats.jpg'
 
 const ALL_SITE_IMAGES = [
   HERO_FULL,
@@ -37,7 +38,7 @@ const ALL_SITE_IMAGES = [
   TACTICAL_ART,
   VIDEO_THUMB,
   '/og/home.jpg',
-  '/og/dayz-cheats.jpg',
+  OG_DEFAULT,
   '/og/forums.jpg',
   '/og/reviews.jpg',
   '/og/faq.jpg',
@@ -49,23 +50,23 @@ const ALL_SITE_IMAGES = [
 
 const FORUM_IMAGES = {
   'features-list': COVER,
-  hotkeys: MENU,
-  'complete-setup': HERO_FULL,
-  'disable-antivirus': CONTROL,
-  'undetected-status': COVER,
   'aimbot-settings': MENU,
   'esp-wallhack-guide': ESP,
-  'radar-hack-guide': MENU,
-  'stream-proof-setup': HOME_ART,
-  'battleye-status': COVER,
+  'modules-esp-guide': ESP,
+  'radar-hud-guide': MENU,
+  'map-finder-guide': BOX,
+  'complete-setup': HERO_FULL,
   'windows-setup': HERO_FULL,
-  'raid-play-guide': BOX,
+  'disable-antivirus': CONTROL,
+  'status-checklist': COVER,
   'loader-errors': TACTICAL_ART,
+  hotkeys: MENU,
+  'stream-proof-setup': HOME_ART,
 }
 
 const PAGE_META = {
   '/': { priority: '1.0', changefreq: 'daily' },
-  '/dayz-cheats': { priority: '0.9', changefreq: 'weekly' },
+  '/warthunder-cheats': { priority: '0.9', changefreq: 'weekly' },
   '/forums': { priority: '0.85', changefreq: 'weekly' },
   '/reviews': { priority: '0.8', changefreq: 'weekly' },
   '/faq': { priority: '0.75', changefreq: 'monthly' },
@@ -173,28 +174,29 @@ function imagesForPath(path, games, forums) {
     return [
       {
         src: '/og/home.jpg',
-        title: 'DayZ Cheats Open Graph',
-        caption: 'Google and social preview image for dayzcheats.io homepage.',
+        title: 'War Thunder Cheats Open Graph',
+        caption: `Google and social preview image for the ${HOST} homepage.`,
       },
       {
         src: HERO_FULL,
-        title: 'DayZ Cheats Hero',
-        caption: 'Buy DayZ cheats - DayZ Aimbot, ESP and radar hack hero artwork for PC.',
+        title: 'War Thunder Cheats Hero',
+        caption:
+          'Buy War Thunder cheats - WT Aimbot, player ESP and modules ESP hero artwork for PC.',
       },
       {
         src: COVER,
-        title: 'DayZ Cheats Product Cover',
-        caption: 'DayZ cheats product cover for checkout and social previews.',
+        title: 'War Thunder Cheats Product Cover',
+        caption: 'War Thunder cheats product cover for checkout and social previews.',
       },
       {
         src: VIDEO_THUMB,
-        title: 'DayZ Cheats Preview Thumbnail',
-        caption: 'Thumbnail for the DayZ Aimbot and ESP preview video.',
+        title: 'War Thunder Cheats Preview Thumbnail',
+        caption: 'Thumbnail for the War Thunder Aimbot and ESP preview video.',
       },
       {
         src: OG_DEFAULT,
-        title: 'DayZ Cheats Product Social Preview',
-        caption: 'Default Open Graph image for dayzcheats.io product pages.',
+        title: 'War Thunder Cheats Product Social Preview',
+        caption: `Default Open Graph image for ${HOST} product pages.`,
       },
     ]
   }
@@ -203,19 +205,19 @@ function imagesForPath(path, games, forums) {
   if (game) {
     return [
       {
-        src: '/og/dayz-cheats.jpg',
-        title: 'DayZ Cheats Open Graph',
-        caption: 'Google and social preview for the DayZ cheats product page.',
+        src: OG_DEFAULT,
+        title: 'War Thunder Cheats Open Graph',
+        caption: 'Google and social preview for the War Thunder cheats product page.',
       },
       {
         src: COVER,
-        title: 'DayZ Aimbot ESP Product Artwork',
+        title: 'War Thunder Aimbot ESP Product Artwork',
         caption: 'Product features, compatibility, status and price before checkout.',
       },
       {
         src: HERO_FULL,
         title: `${game.name} Cheats Product Hero`,
-        caption: `Hero artwork for ${game.name} Aimbot, ESP and radar hack product details.`,
+        caption: `Hero artwork for ${game.name} Aimbot, player ESP and modules ESP product details.`,
       },
       {
         src: MENU,
@@ -225,12 +227,12 @@ function imagesForPath(path, games, forums) {
       {
         src: ESP,
         title: `${game.name} ESP Gameplay`,
-        caption: `Player ESP and wallhack preview for ${game.name}.`,
+        caption: `Player ESP, modules ESP and wallhack chams preview for ${game.name}.`,
       },
       {
         src: VIDEO_THUMB,
-        title: 'DayZ Cheats Preview Thumbnail',
-        caption: 'Thumbnail for the DayZ cheats preview video.',
+        title: 'War Thunder Cheats Preview Thumbnail',
+        caption: 'Thumbnail for the War Thunder cheats preview video.',
       },
     ]
   }
@@ -239,13 +241,13 @@ function imagesForPath(path, games, forums) {
     return [
       {
         src: '/og/forums.jpg',
-        title: 'DayZ Cheats Forums Open Graph',
-        caption: 'Google preview image for the DayZ Cheats guides index.',
+        title: 'War Thunder Cheats Forums Open Graph',
+        caption: 'Google preview image for the War Thunder Cheats guides index.',
       },
       {
         src: MENU,
-        title: 'DayZ Cheats Forum Artwork',
-        caption: 'Artwork reference for DayZ setup and feature guides.',
+        title: 'War Thunder Cheats Forum Artwork',
+        caption: 'Artwork reference for War Thunder setup and feature guides.',
       },
     ]
   }
@@ -259,14 +261,14 @@ function imagesForPath(path, games, forums) {
         title: `${forum?.title || slug} Open Graph`,
         caption:
           forum?.metaDescription ||
-          `Google preview image for ${forum?.title || slug} on dayzcheats.io.`,
+          `Google preview image for ${forum?.title || slug} on ${HOST}.`,
       },
       {
         src: FORUM_IMAGES[slug] || MENU,
         title: `${forum?.title || slug} Artwork`,
         caption:
           forum?.excerpt ||
-          `Visible DayZ Cheats guide artwork for ${forum?.title || slug}.`,
+          `Visible War Thunder Cheats guide artwork for ${forum?.title || slug}.`,
       },
     ]
   }
@@ -275,8 +277,8 @@ function imagesForPath(path, games, forums) {
     return [
       {
         src: '/og/reviews.jpg',
-        title: 'DayZ Cheats Reviews Open Graph',
-        caption: 'Google preview image for DayZ cheats reviews.',
+        title: 'War Thunder Cheats Reviews Open Graph',
+        caption: 'Google preview image for War Thunder cheats reviews.',
       },
     ]
   }
@@ -284,8 +286,8 @@ function imagesForPath(path, games, forums) {
     return [
       {
         src: '/og/faq.jpg',
-        title: 'DayZ Cheats FAQ Open Graph',
-        caption: 'Google preview image for the DayZ Cheats FAQ.',
+        title: 'War Thunder Cheats FAQ Open Graph',
+        caption: 'Google preview image for the War Thunder Cheats FAQ.',
       },
     ]
   }
@@ -293,8 +295,8 @@ function imagesForPath(path, games, forums) {
     return [
       {
         src: '/og/support.jpg',
-        title: 'DayZ Cheats Support Open Graph',
-        caption: 'Google preview image for DayZ Cheats support.',
+        title: 'War Thunder Cheats Support Open Graph',
+        caption: 'Google preview image for War Thunder Cheats support.',
       },
     ]
   }
@@ -302,8 +304,8 @@ function imagesForPath(path, games, forums) {
     return [
       {
         src: '/og/privacy.jpg',
-        title: 'DayZ Cheats Privacy Policy',
-        caption: 'Privacy policy preview for dayzcheats.io orders and support.',
+        title: 'War Thunder Cheats Privacy Policy',
+        caption: `Privacy policy preview for ${HOST} orders and support.`,
       },
     ]
   }
@@ -311,8 +313,8 @@ function imagesForPath(path, games, forums) {
     return [
       {
         src: '/og/terms.jpg',
-        title: 'DayZ Cheats Terms of Use',
-        caption: 'License terms preview for DayZ Cheats.',
+        title: 'War Thunder Cheats Terms of Use',
+        caption: 'License terms preview for War Thunder Cheats.',
       },
     ]
   }
@@ -320,23 +322,25 @@ function imagesForPath(path, games, forums) {
     return [
       {
         src: '/og/refunds.jpg',
-        title: 'DayZ Cheats Refund Policy',
-        caption: 'Refund rules preview for digital DayZ Cheats licenses.',
+        title: 'War Thunder Cheats Refund Policy',
+        caption: 'Refund rules preview for digital War Thunder Cheats licenses.',
       },
     ]
   }
 
-  return [{ src: OG_DEFAULT, title: 'DayZ Cheats', caption: 'DayZ Cheats page artwork.' }]
+  return [
+    { src: OG_DEFAULT, title: 'War Thunder Cheats', caption: 'War Thunder Cheats page artwork.' },
+  ]
 }
 
 function videosForPath(path) {
-  if (path === '/dayz-cheats') {
+  if (path === '/warthunder-cheats') {
     return [
       {
         thumb: VIDEO_THUMB,
-        title: 'DayZ Cheats Aimbot and ESP Preview',
+        title: 'War Thunder Cheats Aimbot and ESP Preview',
         description:
-          'Self-hosted DayZ cheats preview showing Aimbot, ESP menu and survival gameplay visuals on PC.',
+          'Self-hosted War Thunder cheats preview showing silent aim, player ESP, vehicle modules ESP and radar HUD on PC.',
         content: PREVIEW_VIDEO,
       },
     ]
@@ -445,22 +449,19 @@ function validate(games, forums, allPaths, sitemap) {
     if (!imageLocs.includes(siteUrl(image))) errors.push(`Sitemap missing required image: ${image}`)
   }
   if (!sitemap.includes(siteUrl(PREVIEW_VIDEO))) {
-    errors.push('Sitemap missing DayZ preview video content_loc')
+    errors.push('Sitemap missing War Thunder preview video content_loc')
   }
-  if (/Tarkov|tarkovcheats|EFT Reaper|Warzone|warzonecheats|Ricochet/i.test(sitemap)) {
-    errors.push('Sitemap still contains legacy Tarkov/Warzone labels')
+  if (/DayZ|BattlEye|Tarkov|tarkovcheats|Warzone|warzonecheats|Ricochet/i.test(sitemap)) {
+    errors.push('Sitemap still contains legacy DayZ/Tarkov/Warzone labels')
   }
-  if (!sitemap.includes('dayzcheats.io')) {
-    errors.push('Sitemap must target dayzcheats.io')
+  if (!sitemap.includes(HOST)) {
+    errors.push(`Sitemap must target ${HOST}`)
   }
-  if (/tarkovcheats|warzonecheats|wardogshacks|theisle/i.test(sitemap)) {
-    errors.push('Sitemap contains a non-DayZ domain')
+  if (/dayzcheats|tarkovcheats|warzonecheats|wardogshacks|theisle/i.test(sitemap)) {
+    errors.push('Sitemap contains a non-War Thunder domain')
   }
   if (imageLocs.length < expectedUrls.size) {
     errors.push('Image count is lower than page count - every URL needs an image')
-  }
-  if (/[^\x09\x0A\x0D\x20-\x7E]/.test(sitemap.replace(/https?:\/\//g, ''))) {
-    // Allow non-ascii only inside https URLs if any; captions should be ascii.
   }
   if (errors.length) throw new Error(`Sitemap validation failed:\n- ${errors.join('\n- ')}`)
 }

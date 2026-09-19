@@ -1,0 +1,28 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro'
+import { GameProductPage } from '../views/GameProductPage'
+import { SEO, SITE_URL } from '../data/site'
+import { productDetailJsonLd } from '../lib/seo'
+import { getGame } from '../data/games'
+
+const game = getGame('warthunder')
+const jsonLdExtra = [
+  productDetailJsonLd(game?.status ?? 'Updating'),
+  {
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE_URL}/` },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: 'War Thunder Cheats',
+        item: `${SITE_URL}/warthunder-cheats`,
+      },
+    ],
+  },
+]
+---
+
+<BaseLayout seo={SEO.product} jsonLdExtra={jsonLdExtra}>
+  <GameProductPage client:idle guideSlug="warthunder-cheats" />
+</BaseLayout>

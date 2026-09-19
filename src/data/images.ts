@@ -1,11 +1,11 @@
-import { DAYZ_HERO, DAYZ_SOLDIER, DAYZ_COVER, DAYZ_MENU, DAYZ_ESP } from './media'
-import { DAYZ_OG, getOgImageForPath, PAGE_OG } from './og'
+import { WT_HERO, WT_VEHICLE, WT_COVER, WT_MENU, WT_ESP } from './media'
+import { WT_OG, getOgImageForPath, PAGE_OG } from './og'
 
-export { DAYZ_OG, getOgImageForPath, PAGE_OG }
+export { WT_OG, getOgImageForPath, PAGE_OG }
 export { forumOgImage } from './og'
 
-export const DAYZ_PRODUCT_HERO = DAYZ_HERO
-export const DAYZ_PRODUCT_COVER = DAYZ_COVER
+export const WT_PRODUCT_HERO = WT_HERO
+export const WT_PRODUCT_COVER = WT_COVER
 
 export type ImageSeoFields = {
   alt: string
@@ -21,13 +21,14 @@ export const IMAGE_SEO: Record<
     heroCaption: string
   }
 > = {
-  dayz: {
-    alt: 'DayZ cheats product artwork for DayZ Standalone on PC',
-    title: 'DayZ Cheats Product Details',
-    caption: 'DayZ Aimbot, ESP, wallhack, loot ESP, radar hack and BattlEye compatibility',
-    heroAlt: 'DayZ cheats silent aim Aimbot and ESP features',
-    heroTitle: 'DayZ Cheats Features',
-    heroCaption: 'Review DayZ Aimbot, ESP, radar hack and current BattlEye status',
+  warthunder: {
+    alt: 'War Thunder cheats product artwork for War Thunder on PC',
+    title: 'War Thunder Cheats Product Details',
+    caption:
+      'War Thunder Aimbot, silent aim, player ESP, vehicle modules ESP, wallhack chams, radar HUD and Map Finder',
+    heroAlt: 'War Thunder cheats silent aim Aimbot and ESP features',
+    heroTitle: 'War Thunder Cheats Features',
+    heroCaption: 'Review War Thunder Aimbot, ESP, modules ESP and the current load status',
   },
 }
 
@@ -39,55 +40,55 @@ export const PAGE_IMAGES: Record<
   PageImage
 > = {
   home: {
-    src: DAYZ_SOLDIER,
+    src: WT_VEHICLE,
     og: PAGE_OG.home,
-    alt: 'DayZ cheats Aimbot and ESP artwork for DayZ Standalone on PC',
-    title: 'DayZ Cheats',
-    caption: 'DayZ Aimbot, ESP, wallhack and radar hack overview.',
+    alt: 'War Thunder cheats Aimbot and ESP artwork for War Thunder on PC',
+    title: 'War Thunder Cheats',
+    caption: 'War Thunder Aimbot, ESP, wallhack chams and radar HUD overview.',
   },
   forums: {
-    src: DAYZ_HERO,
+    src: WT_HERO,
     og: PAGE_OG.forums,
-    alt: 'DayZ cheats product artwork',
-    title: 'DayZ Cheats Guides',
-    caption: 'Setup, Aimbot and ESP guides for DayZ.',
+    alt: 'War Thunder cheats product artwork',
+    title: 'War Thunder Cheats Guides',
+    caption: 'Setup, Aimbot and ESP guides for War Thunder.',
   },
   reviews: {
-    src: DAYZ_ESP,
+    src: WT_ESP,
     og: PAGE_OG.reviews,
-    alt: 'DayZ cheats review artwork',
-    title: 'DayZ Cheats Reviews',
-    caption: 'Feature and compatibility feedback for DayZ Standalone.',
+    alt: 'War Thunder cheats review artwork',
+    title: 'War Thunder Cheats Reviews',
+    caption: 'Feature and compatibility feedback for War Thunder on PC.',
   },
   faq: {
-    src: DAYZ_MENU,
+    src: WT_MENU,
     og: PAGE_OG.faq,
-    alt: 'DayZ cheats FAQ artwork',
-    title: 'DayZ Cheats FAQ',
-    caption: 'Compatibility, feature and setup answers for DayZ.',
+    alt: 'War Thunder cheats FAQ artwork',
+    title: 'War Thunder Cheats FAQ',
+    caption: 'Compatibility, feature and setup answers for War Thunder.',
   },
   support: {
-    src: DAYZ_HERO,
+    src: WT_HERO,
     og: PAGE_OG.support,
-    alt: 'DayZ cheats support artwork',
-    title: 'DayZ Cheats Support',
-    caption: 'Delivery, loader and setup support for DayZ cheats.',
+    alt: 'War Thunder cheats support artwork',
+    title: 'War Thunder Cheats Support',
+    caption: 'Delivery, loader and setup support for War Thunder cheats.',
   },
   product: {
-    src: DAYZ_COVER,
+    src: WT_COVER,
     og: PAGE_OG.product,
-    alt: 'DayZ Aimbot ESP and radar hack product artwork',
-    title: 'DayZ Cheats Features',
-    caption: 'Product details for DayZ Aimbot and ESP.',
+    alt: 'War Thunder Aimbot, ESP and modules wallhack product artwork',
+    title: 'War Thunder Cheats Features',
+    caption: 'Product details for War Thunder Aimbot, ESP and modules ESP.',
   },
 }
 
 export function getGameImage(_slug: string): string {
-  return DAYZ_PRODUCT_COVER
+  return WT_PRODUCT_COVER
 }
 
 export function getProductHeroImage(_slug: string): string {
-  return DAYZ_PRODUCT_COVER
+  return WT_PRODUCT_COVER
 }
 
 export function getOgImage(path?: string): string {

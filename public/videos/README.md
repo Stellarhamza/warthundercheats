@@ -1,7 +1,7 @@
 ﻿# Videos
 
-Self-hosted DayZ / DayZ Cheats media:
-- `/videos/dayz-preview.mp4` — battlelog DayZ Reaper preview (no third-party embeds)
-- `/media/dayz-hero-full.webp`, `dayz-cover.webp`, `dayz-box.jpg` — product art
-- `/media/dayz-menu.gif`, `dayz-esp-gameplay.gif` — menu/ESP stills
-- `/media/dayz-video-thumb.jpg` — preview poster frame
+Self-hosted War Thunder Cheats media:
+- `/videos/wt-preview.mp4` — War Thunder cheat preview (no third-party embeds)
+- `/media/wt-hero-full.webp`, `wt-cover.webp`, `wt-box.jpg` — product art
+- `/media/wt-menu.gif`, `wt-esp-gameplay.gif` — menu/ESP stills
+- `/media/wt-video-thumb.jpg` — preview poster frame

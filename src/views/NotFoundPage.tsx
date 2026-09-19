@@ -26,11 +26,11 @@ export function NotFoundPage() {
               Page not found
             </h2>
             <p className="mx-auto mt-4 max-w-md text-sm leading-relaxed text-white/55 sm:text-base">
-              That route does not exist. Search the DayZ Cheats guides or head back home.
+              That route does not exist. Search the War Thunder Cheats guides or head back home.
             </p>
 
             <div className="relative z-50 mx-auto mt-8 flex max-w-xl justify-center text-left">
-              <HeroSearch placeholder="Search DayZ cheats guides…" className="w-full" />
+              <HeroSearch placeholder="Search War Thunder cheats guides…" className="w-full" />
             </div>
 
             <div className="mt-8 flex flex-col items-stretch justify-center gap-3 sm:flex-row sm:items-center">

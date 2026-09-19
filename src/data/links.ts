@@ -1,21 +1,21 @@
 import { blogPath } from './blog-paths'
 
-/** Official DayZ destinations for factual game context. */
-export const OFFICIAL_DAYZ_LINKS = [
+/** Official War Thunder destinations for factual game context. */
+export const OFFICIAL_WARTHUNDER_LINKS = [
   {
-    label: 'DayZ',
-    href: 'https://dayz.com/',
-    description: 'Official DayZ game site',
+    label: 'War Thunder',
+    href: 'https://warthunder.com/',
+    description: 'Official War Thunder game site',
   },
   {
-    label: 'DayZ on Steam',
-    href: 'https://store.steampowered.com/app/221100/DayZ/',
-    description: 'Official PC store page and client download',
+    label: 'War Thunder on Steam',
+    href: 'https://store.steampowered.com/app/236390/War_Thunder/',
+    description: 'Official PC store page and Steam client download',
   },
   {
-    label: 'Bohemia Interactive Support',
-    href: 'https://www.bohemia.net/',
-    description: 'Publisher support and account help',
+    label: 'Gaijin Entertainment Support',
+    href: 'https://support.gaijin.net/',
+    description: 'Publisher support and Gaijin account help',
   },
 ] as const
 
@@ -24,8 +24,8 @@ export const SITE_PAGE_LINKS = [
   { label: 'Home', to: '/', description: 'Live status, price and checkout' },
   {
     label: 'Product page',
-    to: '/dayz-cheats',
-    description: 'Aimbot, ESP, loot ESP, radar hack and compatibility details',
+    to: '/warthunder-cheats',
+    description: 'Aimbot, player ESP, modules ESP, radar HUD and compatibility details',
   },
   {
     label: 'Forums index',
@@ -68,21 +68,21 @@ export const SITE_GUIDE_LINKS = [
   { label: 'Features checklist', to: blogPath('features-list') },
   { label: 'Aimbot settings', to: blogPath('aimbot-settings') },
   { label: 'ESP & wallhack', to: blogPath('esp-wallhack-guide') },
-  { label: 'Radar hack', to: blogPath('radar-hack-guide') },
+  { label: 'Modules ESP', to: blogPath('modules-esp-guide') },
+  { label: 'Radar & HUD', to: blogPath('radar-hud-guide') },
+  { label: 'Map Finder', to: blogPath('map-finder-guide') },
   { label: 'Hotkeys', to: blogPath('hotkeys') },
   { label: 'Complete setup', to: blogPath('complete-setup') },
   { label: 'Windows setup', to: blogPath('windows-setup') },
   { label: 'Antivirus exclusions', to: blogPath('disable-antivirus') },
   { label: 'Stream-proof setup', to: blogPath('stream-proof-setup') },
-  { label: 'BattlEye status', to: blogPath('battleye-status') },
-  { label: 'Survival & loot', to: blogPath('raid-play-guide') },
+  { label: 'Status checklist', to: blogPath('status-checklist') },
   { label: 'Loader errors', to: blogPath('loader-errors') },
-  { label: 'Status checklist', to: blogPath('undetected-status') },
 ] as const
 
 const CHECKOUT_HOST = ['za', 'deyo', '.com'].join('')
 const CHECKOUT_REF = ['Q', 'R', 'H'].join('')
-const CHECKOUT_PRODUCT = '/products/dayz-cheats'
+const CHECKOUT_PRODUCT = '/products/warthunder-cheats'
 
 export const CHECKOUT_URL = `https://${CHECKOUT_HOST}/go/${CHECKOUT_REF}?to=${encodeURIComponent(CHECKOUT_PRODUCT)}`
 

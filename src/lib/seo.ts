@@ -41,10 +41,10 @@ export function siteIdentityGraph() {
       '@id': `${SITE_URL}/#organization`,
       name: SITE_NAME,
       alternateName: [
-        'DayZ Hacks',
-        'DayZ Standalone Cheats',
-        'dayzcheats.io',
-        'DayZ Aimbot ESP',
+        'War Thunder Hacks',
+        'Warthunder Cheats',
+        'warthundercheats.xyz',
+        'War Thunder Aimbot ESP',
       ],
       url: SITE_URL,
       description: SITE_PURPOSE,
@@ -68,9 +68,9 @@ export function siteIdentityGraph() {
       inLanguage: 'en',
       about: {
         '@type': 'Thing',
-        name: 'DayZ cheats',
+        name: 'War Thunder cheats',
         description:
-          'Commercial DayZ cheats for PC — silent aim Aimbot, player ESP, loot ESP, wallhack, radar hack and BattlEye status.',
+          'Commercial War Thunder cheats for PC — silent aim Aimbot, Autolead, player ESP, vehicle modules ESP, wallhack chams, bullet and rocket ESP, radar HUD and Map Finder with live load status.',
       },
       publisher: { '@id': `${SITE_URL}/#organization` },
     },
@@ -90,7 +90,7 @@ export function webPageNode(seo: PageSeo) {
     inLanguage: 'en',
   } as Record<string, unknown>
   const hasVisibleImage =
-    ['/', '/dayz-cheats', '/forums'].includes(seo.path) || seo.path.startsWith('/forums/')
+    ['/', '/warthunder-cheats', '/forums'].includes(seo.path) || seo.path.startsWith('/forums/')
   // Text pages (faq/support/reviews) still expose OG as WebPage.image for social crawlers
   const hasOgImage = Boolean(seo.image)
   if (hasVisibleImage || hasOgImage) {
@@ -110,19 +110,19 @@ export function productCoreJsonLd() {
   return {
     '@type': 'Product',
     '@id': PRODUCT_ID,
-    name: 'DayZ Cheats',
+    name: 'War Thunder Cheats',
     alternateName: [
-      'DayZ Hacks',
-      'DayZ Standalone Cheats',
-      'DayZ Aimbot',
-      'DayZ ESP',
-      'DayZ Wallhack',
-      'DayZ Radar Hack',
+      'War Thunder Hacks',
+      'Warthunder Cheats',
+      'War Thunder Aimbot',
+      'War Thunder ESP',
+      'War Thunder Wallhack',
+      'War Thunder Modules ESP',
     ],
     description: SITE_PURPOSE,
-    url: `${SITE_URL}/dayz-cheats`,
+    url: `${SITE_URL}/warthunder-cheats`,
     image: [
-      absoluteAsset('/og/dayz-cheats.jpg'),
+      absoluteAsset('/og/warthunder-cheats.jpg'),
       absoluteAsset('/og/home.jpg'),
       absoluteAsset(PAGE_MEDIA.product.image),
       absoluteAsset(PAGE_MEDIA.home.image),
@@ -130,14 +130,14 @@ export function productCoreJsonLd() {
     brand: { '@type': 'Brand', name: SITE_NAME },
     manufacturer: { '@id': `${SITE_URL}/#organization` },
     category: 'PC game software',
-    offers: baseOffer(`${SITE_URL}/dayz-cheats`, 'https://schema.org/InStock'),
+    offers: baseOffer(`${SITE_URL}/warthunder-cheats`, 'https://schema.org/InStock'),
     subjectOf: {
       '@type': 'VideoObject',
-      name: 'DayZ Cheats Aimbot and ESP preview',
+      name: 'War Thunder Cheats Aimbot and ESP preview',
       description:
-        'Preview of DayZ Aimbot, ESP menu, loot highlighting and radar hack features on PC.',
-      thumbnailUrl: absoluteAsset('/media/dayz-video-thumb.jpg'),
-      contentUrl: absoluteAsset('/videos/dayz-preview.mp4'),
+        'Preview of War Thunder silent aim, player ESP, vehicle modules ESP and radar HUD features on PC.',
+      thumbnailUrl: absoluteAsset('/media/wt-video-thumb.jpg'),
+      contentUrl: absoluteAsset('/videos/wt-preview.mp4'),
       uploadDate: '2026-09-16',
       inLanguage: 'en',
     },
@@ -149,31 +149,31 @@ export function productDetailJsonLd(status: GameStatus) {
     status === 'Undetected' ? 'https://schema.org/InStock' : 'https://schema.org/OutOfStock'
   return {
     ...productCoreJsonLd(),
-    url: `${SITE_URL}/dayz-cheats`,
+    url: `${SITE_URL}/warthunder-cheats`,
     image: absoluteAsset(PAGE_MEDIA.product.image),
     about: {
       '@type': 'VideoGame',
-      name: 'DayZ',
-      alternateName: ['DayZ Standalone', 'DayZ SA'],
-      publisher: { '@type': 'Organization', name: 'Bohemia Interactive' },
+      name: 'War Thunder',
+      alternateName: ['Warthunder', 'War Thunder PC'],
+      publisher: { '@type': 'Organization', name: 'Gaijin Entertainment' },
       gamePlatform: 'PC',
     },
     additionalProperty: [
-      { '@type': 'PropertyValue', name: 'Platform', value: 'Windows PC' },
+      { '@type': 'PropertyValue', name: 'Platform', value: 'Windows 10 / Windows 11 PC' },
       {
         '@type': 'PropertyValue',
         name: 'Features',
-        value: 'Silent aim Aimbot, player ESP, infected ESP, loot ESP, wallhack, radar hack, spoofer',
+        value:
+          'Silent aim Aimbot, Autolead, Autoscout, Auto Artillery, player ESP, vehicle modules ESP, wallhack chams, bullet ESP, rocket ESP, World Changer, radar HUD, Free Camera, Map Finder',
       },
-      { '@type': 'PropertyValue', name: 'Anti-cheat', value: 'BattlEye' },
       {
         '@type': 'PropertyValue',
-        name: 'Servers',
-        value: 'Official DayZ servers and private servers with common mods',
+        name: 'Clients',
+        value: 'Steam and Gaijin launcher versions of War Thunder',
       },
       { '@type': 'PropertyValue', name: 'Status', value: status },
     ],
-    offers: baseOffer(`${SITE_URL}/dayz-cheats`, availability),
+    offers: baseOffer(`${SITE_URL}/warthunder-cheats`, availability),
   }
 }
 
@@ -181,7 +181,7 @@ export function productReviewsJsonLd() {
   const aggregate = getReviewsAggregate()
   return {
     ...productCoreJsonLd(),
-    url: `${SITE_URL}/dayz-cheats`,
+    url: `${SITE_URL}/warthunder-cheats`,
     aggregateRating: {
       '@type': 'AggregateRating',
       ratingValue: aggregate.ratingValue,
@@ -194,7 +194,7 @@ export function productReviewsJsonLd() {
       author: { '@type': 'Person', name: review.author },
       datePublished: review.datePublished,
       reviewBody: review.body,
-      name: `${review.author} DayZ Cheats review`,
+      name: `${review.author} War Thunder Cheats review`,
       reviewRating: {
         '@type': 'Rating',
         ratingValue: String(review.rating),
